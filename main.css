@@ -385,4 +385,7 @@ body{
     .lorem{
         margin-bottom: 50px;
     }
+    .lorem-card>img{
+        margin-right: 20px;
+    }
 }
