@@ -20,7 +20,7 @@ body{
 
 .container{
     width: 100%;
-    max-width: 1240px;
+    max-width: 1260px;
     padding: 0 20px;
     margin: 0 auto;
 }
@@ -136,7 +136,6 @@ body{
     font-weight: 600;
     font-size: 48px;
     line-height: 60px;
-    /* padding: 70px 0px 50px 80px; */
     position: absolute;
     width: 360px;
     top: 180px;
@@ -195,8 +194,155 @@ body{
 }
 
 
+.div-box{
+    margin-bottom: 100px;
+}
+.div-box h2{
+    color: #363738;
+    font-family: "Exo 2", serif;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 60px;
+    margin-bottom: 30px;
+}
+.div-box p{
+    color: #6B6B6C;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 50px;
+}
+.div-box-1 {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.div-list {
+    box-shadow: 0px 4px 15px 0px rgba(0,0,0,0.12);
+    margin-right: 18px;
+    padding-bottom: 30px;
+}
+.div-list h3{
+    color: #363738;
+    font-family: "Exo 2", serif;
+    line-height: 27px;
+    font-size: 20px;    
+    font-weight: 600;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.div-list p{
+    color: #6B6B6C;
+    line-height: 24px;
+    font-weight: 400;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+.div-list a{
+    font-family: "Exo 2", serif;
+    font-weight: 600;
+    line-height: 20px;
+    color: #363738;
+    text-decoration: none;
+    margin-left: 20px;
+    border-bottom: 3px #FFCE50 solid;
+    padding-bottom: 2px;
+}
+.paper {
+    padding: 70px;
+    background-color: #0B7572;
+    position: relative;
+    height: 910px;
+    margin-bottom: 100px;
+}
+.paper h3{
+    font-family: "Exo 2", serif;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 60px;
+    color: #fff;
+}
+.paper img{
+    position: absolute;
+    right: 70px;
+    top: 70px;
+}
+.info h3{
+    color: #363738;
+    font-family: "Exo 2", serif;
+    font-weight: 600;
+    line-height: 60px;
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+.info-list {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 30px;
+    box-shadow: 0px 4px 15px 0px rgba(0,0,0,0.12);
+    margin-bottom: 24px;
+}
+.info-list img{
+    margin-right: 70px;
+}
+.info-list-item h4{
+    color: #363738;
+    font-family: "Exo 2", serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+.info-list-item hr{
+    width: 86px;
+    border: #FFCE50 2px solid;
+    margin-bottom: 20px;
+}
+.info-list-item p {
+    color: #6B6B6C ;
+    font-weight: 400;
+    line-height: 24px;
+    max-width: 570px;
+}
 
 
+.companies {
+    margin-top: 100px;
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1260px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #6B6B6C;
+}
 
 
 @media screen and (max-width:1024px) {
@@ -225,6 +371,23 @@ body{
         display: flex;
         justify-self: center;
         
+    }
+    .div-box-1{
+        flex-direction: column;
+    }
+    .div-box h2{
+        text-align: center;
+    }
+    .div-box p{
+        text-align: center;
+    }
+    .div-list{
+        margin-bottom: 30px;
+    
+    }
+    .paper img{
+        width: 60%;
+        top: 210px;
     }
 }
 @media screen and (max-width:768px){
@@ -282,6 +445,9 @@ body{
     }
     .lorem-hr{
         display: none;
+    }
+    .companies{
+        grid-template-columns: auto;
     }
 }
 
@@ -352,6 +518,38 @@ body{
         left: 30px;
         
     }   
+    .paper{
+        height: 650px;
+    }
+    .info h3{
+        line-height: 40px;
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+    .info-list{
+        flex-direction: column;
+        text-align: center;
+    }
+    .info-list hr{
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    .info-list img{
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .paper{
+        height: 650px;
+    }
+    .paper img{
+        width: 70%;
+        top: 170px;
+        right: 50px;
+    }
+    .paper h3{
+        font-size: 38px;
+        line-height: 40px;
+    }
 }
 
 @media screen and (max-width:375px){
@@ -387,5 +585,48 @@ body{
     }
     .lorem-card>img{
         margin-right: 20px;
+    }
+    .paper{
+        height: 500px;
+        padding: 40px;
+    }
+    .paper h3{
+        font-size: 35px;
+    line-height: 40px;
+    }
+    .info-list img{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .info-list p{
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .info-list h3{
+        font-size: 25px;
+        line-height: 25px;
+    }
+    .div-list{
+        text-align: center;
+    }
+    .div-list img{
+        width: 95%;
+    }
+    .div-box h2{
+        font-size: 38px;
+        line-height: 30px;
+    }
+    .lorem-card img{
+        width: 25%;
+        margin-left: 15px;
+    }
+    .paper img{
+        width: 70%;
+        top: 170px;
+        right: 50px;
+    }
+    .paper h3{
+        font-size: 25px;
+        line-height: 30px;
     }
 }
